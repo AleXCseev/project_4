@@ -20,7 +20,7 @@
 	width: 463px;
 	word-wrap: wrap;
 	position: absolute;
-	left: 56%;
+	left: 58%;
 	top: 40px;
 	span {
 		color: #0A2DB9;
@@ -157,6 +157,11 @@
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+.move__back:hover {
+	transform: rotate(180deg) scale(1.1);
 }
 
 .move__next {
@@ -164,4 +169,9 @@
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+.move__next:hover {
+	transform: scale(1.1);
 }
