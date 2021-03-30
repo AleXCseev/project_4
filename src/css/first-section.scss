@@ -41,7 +41,7 @@
 	position: relative;
 }
 
-.video__content:before {
+.video__content:after {
 	content: "";
 	position: absolute;
 	width: 980px;
@@ -51,7 +51,7 @@
 	background-image: url("../img/video-man.png");
 	background-repeat: no-repeat;
 	background-size: contain;
-	z-index: 10;
+	z-index: 5;
 }
 
 .video__title {
@@ -74,6 +74,12 @@
 	background-size: cover;
 	position: relative;
 	z-index: 10;
+	iframe {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		z-index: 20;
+	}
 }
 
 .video:before {
@@ -87,6 +93,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	cursor: pointer;
+	z-index: 10;
 }
 
 .video__leafs {
@@ -272,6 +279,7 @@
 	transition: 0.3s ease;
 	border-radius: 100%;
 	cursor: pointer;
+	outline: none;
 }
 
 .sprey__color-btn:hover {

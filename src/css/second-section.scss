@@ -5,7 +5,7 @@
 
 .card__section {
 	width: 100%;
-	height: 2130px;
+	height: auto;
 	background-image: url("../img/card-bg.png");
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -47,6 +47,7 @@
 	justify-content: center;
 	align-items: flex-end;
 	padding-right: 20px; 
+	position: relative;
 }
 
 .sale__text1 {
@@ -76,15 +77,16 @@
 
 .card__boot1 {
 	width: 550px;
-	top: 90px;
-	left: -110px;
+	top: -90px;
+	left: -170px;
 	z-index: 10;
 }
 
 .card__boot2 {
 	width: 500px;
-	top: -80px;
-	left: -50px;
+	top: -250px;
+	left: -100px;
+	z-index: 9;
 }
 
 // .card__leafs {
@@ -92,54 +94,54 @@
 // }
 
 .card__leafs-1 {
-	top: 330px;
-	left: 300px;
+	top: 150px;
+	left: 240px;
 }
 
 .card__leafs-2 {
-	top: 260px;
-	left: 260px;
+	top: 90px;
+	left: 200px;
 	transform: rotate(-70deg) scale(0.4);
 }
 
 .card__leafs-3 {
-	top: 30px;
-	left: -30px;
+	top: -160px;
+	left: -100px;
 	transform: rotate(-90deg) scale(0.7);
 }
 
 .card__leafs-4 {
-	top: -30px;
-	left: 30px;
+	top: -200px;
+	left: -30px;
 	transform: rotate(-20deg) scale(0.4);
 }
 .card__2 {
 	.card__boot1 {
 		width: 600px;
-		top: 60px;
-		left: -120px;
+		top: -120px;
+		left: -200px;
 		z-index: 10;
 	}
 	
 	.card__boot2 {
 		width: 510px;
-		top: -90px;
-		left: -60px;
+		top: -260px;
+		left: -130px;
 	}
 }
 
 .card__3 {
 	.card__boot1 {
 		width: 600px;
-		top: 40px;
-		left: -120px;
+		top: -150px;
+		left: -190px;
 		z-index: 10;
 	}
 	
 	.card__boot2 {
 		width: 510px;
-		top: -160px;
-		left: -40px;
+		top: -320px;
+		left: -150px;
 	}
 }
 
@@ -192,6 +194,10 @@
 	color: #101010;
 	width: 100%;
 	margin-bottom: 30px;
+	span {
+		color: #fff;
+		font-weight: 900;
+	}
 }
 
 .card__galary {
@@ -284,11 +290,15 @@
 	height: 100%;
 }
 
+.card .form__input:last-of-type {
+	margin-bottom: 10px;
+}
+
 .card__size-btns {
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
-	.size__title {
+	span {
 		margin-bottom: 10px;
 		font-family: Montserrat;
 		font-style: normal;
@@ -302,7 +312,7 @@
 .btn__group {
 	display: flex;
 	justify-content: flex-start;
-	height: 75px;
+	height: 90px;
 	margin-bottom: 20px;
 }
 
@@ -338,7 +348,7 @@
 	position: absolute;
 	transform: rotate(90deg);
 	width: 60px;
-	bottom: -48px;
+	bottom: -60px;
 	left: -50%;
 	font-family: Montserrat;
 	font-style: normal;
