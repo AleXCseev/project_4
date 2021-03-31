@@ -83,6 +83,8 @@
 	text-align: left;
 	margin-top: -20px;
 	margin-bottom: 50px;
+	width: 100%;
+	word-wrap: wrap;
 }
 
 .order__wrapper {
@@ -167,6 +169,10 @@
 	color: #101010;
 	text-decoration: none;
 	cursor: pointer;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
 }
 
 .order:hover {

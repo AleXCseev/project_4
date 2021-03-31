@@ -27,7 +27,7 @@
 	border-radius: 10px;
 	padding: 30px 100px 30px 30px;
 	margin: 0;
-	left: 2500px;
+	left: 2000px;
 	opacity: 0;
 }
 
@@ -38,6 +38,7 @@
 	top: 50px;
 	z-index: 8;
 	opacity: 0;
+
 }
 .review__2 {
 	width: 360px;
@@ -69,7 +70,7 @@
 	left: 1290px;
 	top: 50px;
 	z-index: 10;
-	opacity: 1;
+	opacity: 0;
 }
 
 .review:before {
@@ -133,6 +134,8 @@
 	line-height: 20px;
 	color: #000000;
 	margin-bottom: 10px;
+	min-width: 100%;
+	word-wrap: wrap;
 }
 
 .reviews__btns {

@@ -7,9 +7,9 @@ $(function () {
 
 	$("body").on('click', '[href*="#"]', function (e) {
 		var fixedOffset = 0;
-		// if ($(document).width() <= 800) {
-		// 	fixedOffset = 400;
-		// }
+		if ($(document).width() <= 600) {
+			fixedOffset = 700;
+		}
 		$('html,body')
 			.stop()
 			.animate({ scrollTop: $(this.hash).offset().top + fixedOffset }, 1000);
@@ -38,31 +38,40 @@ $(function () {
 
 	function carousel(selector, btnSelector, active) {
 		var acarousel = $(selector).acarousel({
-			moveAfter:function () {
+			moveBefore:function () {
 				if(active) {
 					var position = acarousel.getPos(0).index + 1;
+					$(".slide").each(function(i) {
+						if(position == i + 1) {
+							$(".slider__text").hide().html($(this).attr("data-text")).fadeIn(1000)
+						}
+					})
+					
 					$(".current__slide").text("0" + position);
 				} else {
 					return false;
 				}
 			}
 		});
-
-		$(selector).swipe({
-			swipeStatus: function (event, phase, direction) {
-				if (phase == "end") {
-					if (direction == 'left') {
-						acarousel.move(-1)
+		if($(window).width() <= 800) {
+			$(selector).swipe({
+				swipeStatus: function (event, phase, direction) {
+					if (phase == "end") {
+						if (direction == 'left') {
+							acarousel.move(-1)
+						}
+						if (direction == 'right') {
+							acarousel.move(1);
+						}
 					}
-					if (direction == 'right') {
-						acarousel.move(1);
-					}
-				}
-			},
-			triggerOnTouchEnd: false,
-			threshold: 20,
-		});
+				},
+				triggerOnTouchEnd: false,
+				threshold: 20,
+			});	
+		}
 
+		
+		
 		$(btnSelector + " .move__back").click(function () {
 			if (acarousel.isAnim()) return false; 
 			acarousel.move(1);
@@ -153,3 +162,6 @@ $(function () {
 	
 	addVideoOnPage(".video");
 })
+
+
+
