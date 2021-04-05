@@ -313,8 +313,8 @@
 .btn__group {
 	display: flex;
 	justify-content: flex-start;
-	height: 90px;
-	margin-bottom: 20px;
+	height: 110px;
+	margin-bottom: 5px;
 }
 
 .btn__block {
@@ -344,25 +344,30 @@
 	opacity: 1;
 }
 
-.card__size {
-	display: block;
+span.card__size {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 	opacity: 0;
 	visibility: hidden;
 	position: absolute;
-	transform: rotate(90deg);
-	width: 60px;
-	bottom: -60px;
-	left: -50%;
+	width: 80px;
+	height: 34px;
+	bottom: -65px;
+	left: 50%;
+	transform: translateX(-50%) rotate(90deg);
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
-	line-height: 140%;
+	// line-height: 140%;
 	letter-spacing: normal;
 	color: #101010;
 	text-align: left;
 	transition: 0.3s ease;
 	z-index: 30;
+	margin: 0;
+	padding: 0;
 }
 
 .btn__block.active {

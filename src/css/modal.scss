@@ -41,21 +41,24 @@
 	border: 1px solid #888888;
 	box-sizing: border-box;
 	border-radius: 4px;
-	font-family: "Montserat";
+	font-family: Montserrat;
 	font-weight: normal;
 	font-size: 18px;
-	line-height: 21px;
+	line-height: 50px;
 	color: #444444;
 	padding: 0 20px;
 	background-color: #fff;
 	margin-right: 30px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .name__input::placeholder {
-	font-family: "Montserat";
+	font-family: Montserrat;
 	font-weight: normal;
 	font-size: 18px;
-	line-height: 21px;
+	line-height: 50px;
 	color: #444;
 }
 
@@ -71,6 +74,11 @@
 	align-items: center;
 	// margin-left: 30px;
 	cursor: pointer;
+	span {
+		font-family: Montserrat;
+		font-weight: normal;
+		font-size: 16px;
+	}
 }
 
 .file div {
@@ -124,7 +132,7 @@
 	height: 50px;
 	justify-content: flex-end;
 	align-items: center;
-	font-family: "Montserat";
+	font-family: Montserrat;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 21px;
@@ -166,7 +174,7 @@
 }
 
 .modal__area::placeholder {
-	font-family: "Montserat";
+	font-family: Montserrat;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 130%;
@@ -178,7 +186,7 @@
 	height: 50px;
 	background: #5B67C8;
 	border-radius: 4px;
-	font-family: "Montserat";
+	font-family: Montserrat;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 21px;

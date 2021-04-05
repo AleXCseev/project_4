@@ -5,6 +5,8 @@ $(function () {
 		loop: true,
 	});
 
+
+
 	$("body").on('click', '[href*="#"]', function (e) {
 		var fixedOffset = 0;
 		if ($(document).width() <= 600) {
@@ -13,6 +15,7 @@ $(function () {
 		$('html,body')
 			.stop()
 			.animate({ scrollTop: $(this.hash).offset().top + fixedOffset }, 1000);
+			console.log(fixedOffset);
 		e.preventDefault();
 	});
 
@@ -58,20 +61,19 @@ $(function () {
 				swipeStatus: function (event, phase, direction) {
 					if (phase == "end") {
 						if (direction == 'left') {
+							if (acarousel.isAnim()) return false; 
 							acarousel.move(-1)
 						}
 						if (direction == 'right') {
+							if (acarousel.isAnim()) return false; 
 							acarousel.move(1);
 						}
 					}
 				},
 				triggerOnTouchEnd: false,
-				threshold: 20,
+				threshold: 200,
 			});	
 		}
-
-		
-		
 		$(btnSelector + " .move__back").click(function () {
 			if (acarousel.isAnim()) return false; 
 			acarousel.move(1);

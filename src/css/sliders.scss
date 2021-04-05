@@ -70,7 +70,7 @@
 }
  
 .slider__wrapper {
-	width: 100%;
+	width: 1240px;
 	height: 560px;
 	position: absolute;
 	left: 35%;
@@ -103,32 +103,38 @@
 	height: 560px;
 	top: 0;
 	left: 0;
-	z-index: 10;
+	z-index: 12;
+	opacity: 1;
 }
 
 .slide__2 {
 	left: 350px;
-	z-index: 9;
+	z-index: 10;
+	opacity: 1;
 }
 
 .slide__3 {
 	left: 580px;
-	z-index: 11;
+	z-index: 9;
+	opacity: 1;
 }
 
 .slide__4 {
 	left: 810px;
-	z-index: 11;
+	z-index: 8;
+	opacity: 1;
 }
 
 .slide__5 {
 	left: 1040px;
-	z-index: 11;
+	z-index: 7;
+	opacity: 1;
 }
 
 .slide__6 {
-	left: 1470px;
-	z-index: 11;
+	left: 0px;
+	z-index: 6;
+	opacity: 0;
 }
 
 .move__mark {
