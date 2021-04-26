@@ -14,11 +14,27 @@ img {
 	pointer-events: none;
 }
 
+*:focus-visible {
+	outline: none;
+}
+
+p {
+	width: 100%;
+}
+
+a, button {
+	outline: none;
+	margin: 0;
+	padding: 0;
+}
+
 body {
+	width: 100%;
+	height: auto;
 	font-size: 15px;
-	font-family: Montserrat, sans-serif;
+	font-family: Montserrat;
 	font-weight: normal;
-	background-color: $bg-blue;
+	background: #0A1727;
 }
 
 .site__wrapper {
@@ -29,6 +45,7 @@ body {
 	justify-content: flex-start;
 	align-items: flex-start;
 	overflow: hidden;
+	margin: auto;
 }
 
 .container {
@@ -37,5 +54,3 @@ body {
 	margin: 0 auto;
 	position: relative;
 }
-
-
